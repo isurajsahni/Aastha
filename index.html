@@ -17,8 +17,9 @@
     <div class="top-bar">
         <div class="container">
             <div class="top-contact">
-                <a href="mailto:info@aasthadiagnostic.com"><i class="fa-solid fa-envelope"></i> info@aasthadiagnostic.com</a>
-                <a href="tel:+919876543210"><i class="fa-solid fa-phone"></i> +91 98765 43210</a>
+                <a href="mailto:mukesh@aasthadiagnosticlab.in"><i class="fa-solid fa-envelope"></i> mukesh@aasthadiagnosticlab.in</a>
+                <a href="tel:+916280233606"><i class="fa-solid fa-phone"></i> 62802-33606</a>
+                <a href="tel:+919877160273"><i class="fa-solid fa-phone"></i> 98771-60273</a>
             </div>
             <div class="top-right">
                 <div class="social-icons">
@@ -41,9 +42,6 @@
             <nav class="nav-links" id="navLinks">
                 <a href="index.html" class="active">Home</a>
                 <a href="about.html">About Us</a>
-                <a href="#services">Services</a>
-                <a href="#packages">Packages</a>
-                <a href="#tests">Test Menu</a>
                 <a href="contact.html">Contact</a>
             </nav>
             <div class="header-action">
@@ -95,7 +93,7 @@
                     <div class="hero-bottom-right">
                         <div class="hero-toll-free">
                             <i class="fa-solid fa-headset"></i>
-                            <span>Toll Free: <strong>1800-12345-77</strong></span>
+                            <span>Helpline: <a href="tel:+916280233606" style="color:inherit; text-decoration:none;"><strong>62802-33606</strong></a></span>
                         </div>
                         <button class="btn-view-package">View Package</button>
                     </div>
@@ -103,7 +101,7 @@
             </div>
 
             <!-- Right Hero Form Card -->
-            <div class="hero-form-container">
+            <div class="hero-form-container" id="hero-form">
                 <div class="form-header-row">
                     <div class="form-header-title">
                         <i class="fa-solid fa-clipboard-check"></i>
@@ -165,19 +163,51 @@
                     </button>
                 </form>
 
-                <!-- White Doctor Information Card (Requested in Audio) -->
+                <!-- White Information Card - Our Two Labs -->
                 <div class="doctor-info-box">
-                    <div class="doctor-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=200&q=80" alt="Dr. Mukesh Kumar">
-                    </div>
-                    <div class="doctor-details-content">
-                        <div class="doctor-name">Dr. Mukesh Kumar</div>
-                        <div class="doctor-title">DMLT | Chief Laboratory Officer</div>
-                        <div class="doctor-exp">15+ Yrs Experience • Senior Medical Lab Technologist</div>
-                        <div class="doctor-status">
-                            <span class="status-dot-green"></span>
-                            <span>Available Today for Consultation</span>
+                    <div class="doctor-box-heading">Our Laboratories</div>
+
+                    <!-- Part 1 -->
+                    <div class="doctor-entry">
+                        <div class="doctor-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=200&q=80" alt="Mukesh Kumar, M.H. Diagnostic Lab">
                         </div>
+                        <div class="doctor-details-content">
+                            <div class="doctor-name">Mukesh Kumar <span class="doctor-qual">DMLT</span></div>
+                            <div class="doctor-title">M.H. Diagnostic Lab</div>
+                            <div class="doctor-exp">Durga Puri, St. No. 12, Opp. Prince Property Dealer, Main Road, Haibowal, Ludhiana</div>
+                            <div class="doctor-contact">
+                                <i class="fa-solid fa-phone"></i>
+                                <a href="tel:+916280233606">62802-33606</a>
+                                <span class="doctor-dot">•</span>
+                                <a href="tel:+918557821162">85578-21162</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="doctor-divider"></div>
+
+                    <!-- Part 2 -->
+                    <div class="doctor-entry">
+                        <div class="doctor-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=200&q=80" alt="Kanchan Kaintura, Aastha Diagnostic Lab">
+                        </div>
+                        <div class="doctor-details-content">
+                            <div class="doctor-name">Kanchan Kaintura <span class="doctor-qual">B.Sc. MLT</span></div>
+                            <div class="doctor-title">Aastha Diagnostic Lab</div>
+                            <div class="doctor-exp">Churpor Road, Near Vijay Nagar, Haibowal Kalan, Ludhiana (Pb.)</div>
+                            <div class="doctor-contact">
+                                <i class="fa-solid fa-phone"></i>
+                                <a href="tel:+919877160273">98771-60273</a>
+                                <span class="doctor-dot">•</span>
+                                <a href="tel:+918054748365">80547-48365</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="doctor-status">
+                        <span class="status-dot-green"></span>
+                        <span>Both labs open today • Home collection available</span>
                     </div>
                 </div>
             </div>
@@ -220,7 +250,7 @@
                     <h2 class="section-title">Popular Diagnostic Tests</h2>
                     <p class="section-subtitle" style="margin-bottom:0;">Choose from our wide range of diagnostic tests ensuring accurate and timely results.</p>
                 </div>
-                <a href="#" class="btn btn-outline" style="padding:8px 20px;">View All Tests</a>
+                <a href="#hero-form" class="btn btn-outline" style="padding:8px 20px;">Custom Test</a>
             </div>
 
             <div class="tests-grid">
@@ -636,7 +666,7 @@
             <h2>Take the First Step Towards Better Health</h2>
             <p style="font-size:1.1rem; max-width:600px; margin:0 auto; opacity:0.9;">Don't compromise on your health. Book your diagnostic tests with Aastha Diagnostic Centre today and get accurate results you can trust.</p>
             <div class="cta-buttons">
-                <button class="btn btn-light" style="font-size:1.1rem; padding:15px 30px;"><i class="fa-solid fa-phone" style="margin-right:10px;"></i> Call Us: +91 98765 43210</button>
+                <a href="tel:+916280233606" class="btn btn-light" style="font-size:1.1rem; padding:15px 30px;"><i class="fa-solid fa-phone" style="margin-right:10px;"></i> Call Us: 62802-33606</a>
                 <button class="btn btn-outline" style="border-color:white; color:white; font-size:1.1rem; padding:15px 30px;">Book a Test Online</button>
             </div>
         </div>
@@ -684,9 +714,9 @@
                 <div>
                     <h4>Contact Info</h4>
                     <ul style="color:var(--text-muted); font-size:0.95rem;">
-                        <li style="display:flex; gap:10px;"><i class="fa-solid fa-location-dot" style="color:var(--primary-blue); margin-top:5px;"></i> 123 Healthcare Avenue, Medical District, City - 400001</li>
-                        <li style="display:flex; gap:10px;"><i class="fa-solid fa-phone" style="color:var(--primary-blue); margin-top:5px;"></i> +91 98765 43210<br>+91 98765 43211</li>
-                        <li style="display:flex; gap:10px;"><i class="fa-solid fa-envelope" style="color:var(--primary-blue); margin-top:5px;"></i> info@aasthadiagnostic.com</li>
+                        <li style="display:flex; gap:10px;"><i class="fa-solid fa-user-doctor" style="color:var(--primary-blue); margin-top:5px;"></i> <span><strong style="color:#1a1a1a;">Mukesh Kumar (DMLT)</strong><br>M.H. Diagnostic Lab<br>Durga Puri, St. No. 12, Opp. Prince Property Dealer, Main Road, Haibowal, Ludhiana<br><a href="tel:+916280233606" style="display:inline;">62802-33606</a>, <a href="tel:+918557821162" style="display:inline;">85578-21162</a></span></li>
+                        <li style="display:flex; gap:10px;"><i class="fa-solid fa-user-doctor" style="color:var(--primary-blue); margin-top:5px;"></i> <span><strong style="color:#1a1a1a;">Kanchan Kaintura (B.Sc. MLT)</strong><br>Aastha Diagnostic Lab<br>Churpor Road, Near Vijay Nagar, Haibowal Kalan, Ludhiana (Pb.)<br><a href="tel:+919877160273" style="display:inline;">98771-60273</a>, <a href="tel:+918054748365" style="display:inline;">80547-48365</a></span></li>
+                        <li style="display:flex; gap:10px;"><i class="fa-solid fa-envelope" style="color:var(--primary-blue); margin-top:5px;"></i> <a href="mailto:mukesh@aasthadiagnosticlab.in" style="display:inline;">mukesh@aasthadiagnosticlab.in</a></li>
                     </ul>
                 </div>
             </div>

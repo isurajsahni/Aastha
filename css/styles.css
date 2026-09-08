@@ -47,7 +47,7 @@ img {
 /* Layout Classes */
 .container {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1380px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -535,10 +535,31 @@ h2.section-title {
   padding: 14px 16px;
   margin-top: 16px;
   display: flex;
-  align-items: center;
-  gap: 14px;
+  flex-direction: column;
+  gap: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
   border: 1px solid #ffffff;
+}
+
+.doctor-box-heading {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #94a3b8;
+}
+
+/* Each half of the card: one lab / one person */
+.doctor-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.doctor-divider {
+  height: 1px;
+  background: #e9f2ff;
+  margin: 0 -16px;
 }
 
 .doctor-img-wrapper {
@@ -566,6 +587,21 @@ h2.section-title {
   font-size: 0.92rem;
   font-weight: 700;
   color: #0f172a;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.doctor-qual {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #0252cc;
+  background: #e9f2ff;
+  border-radius: 20px;
+  padding: 2px 8px;
+  white-space: nowrap;
 }
 
 .doctor-title {
@@ -577,6 +613,36 @@ h2.section-title {
 .doctor-exp {
   font-size: 0.73rem;
   color: #64748b;
+  line-height: 1.45;
+}
+
+.doctor-contact {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.doctor-contact i {
+  font-size: 0.65rem;
+  color: #0252cc;
+}
+
+.doctor-contact a {
+  color: #0f172a;
+  text-decoration: none;
+}
+
+.doctor-contact a:hover {
+  color: #0252cc;
+  text-decoration: underline;
+}
+
+.doctor-dot {
+  color: #cbd5e1;
 }
 
 .doctor-status {
@@ -586,7 +652,11 @@ h2.section-title {
   display: flex;
   align-items: center;
   gap: 5px;
-  margin-top: 2px;
+  padding-top: 10px;
+  border-top: 1px solid #e9f2ff;
+  margin: 0 -16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .status-dot-green {
@@ -1244,7 +1314,7 @@ h2.section-title {
     grid-template-columns: 1fr;
   }
 
-  .doctor-info-box {
+  .doctor-entry {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
