@@ -95,6 +95,8 @@ h2.section-title {
   border-radius: 50px;
   font-weight: 600;
   cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
   transition: var(--transition);
   border: none;
   font-size: 1rem;
@@ -297,7 +299,7 @@ h2.section-title {
 }
 
 .hero-left-card h1 {
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   font-weight: 700;
   line-height: 1.25;
   color: #0f172a;
@@ -417,6 +419,7 @@ h2.section-title {
   display: flex;
   align-items: center;
   gap: 6px;
+  white-space: nowrap;
 }
 
 .hero-toll-free strong {
@@ -432,6 +435,8 @@ h2.section-title {
   border-radius: 20px;
   border: none;
   cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
   transition: var(--transition);
 }
 
@@ -566,6 +571,12 @@ h2.section-title {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #94a3b8;
+}
+
+.doctor-entries {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
 }
 
 /* Each half of the card: one lab / one person */
@@ -722,6 +733,14 @@ h2.section-title {
 .feature-card p {
   font-size: 0.9rem;
   color: var(--text-muted);
+}
+
+.section-header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 40px;
+  gap: 20px;
 }
 
 /* Popular Tests Grid */
@@ -1300,6 +1319,9 @@ h2.section-title {
   .hero-bottom-right {
     width: 100%;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 
   .hero-image-box {
@@ -1326,5 +1348,17 @@ h2.section-title {
 
   .doctor-entry {
     gap: 10px;
+  }
+
+  .doctor-entries {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .section-header-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 24px;
   }
 }
