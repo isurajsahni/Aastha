@@ -22,7 +22,7 @@
                 <a href="tel:+919877160273"><i class="fa-solid fa-phone"></i> 98771-60273</a>
             </div>
             <div class="top-right">
-                <button class="btn btn-light btn-sm" style="padding: 5px 15px; font-size: 0.8rem;">Book a Test</button>
+                <button class="btn btn-light btn-sm" data-book-test style="padding: 5px 15px; font-size: 0.8rem;">Book a Test</button>
             </div>
         </div>
     </div>
@@ -43,7 +43,7 @@
                 <a href="contact.html">Contact</a>
             </nav>
             <div class="header-action">
-                <button class="btn btn-primary">Book Home Collection</button>
+                <button class="btn btn-primary" data-book-test>Book Home Collection</button>
                 <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars"></i>
                 </button>
@@ -59,10 +59,7 @@
                 <div class="hero-tags-row">
                     <span class="hero-tag-blue"><i class="fa-regular fa-circle-check"></i> 10+ Years of Service</span>
                     <span class="hero-tag-gray">NABL Quality Protocols</span>
-                    <span class="hero-tag-gray">Ludhiana & Punjab</span>
                 </div>
-
-                <div class="hero-package-badge">CARDIAC WELLNESS PACKAGE</div>
 
                 <h1>Give your <span class="highlight-red">HEART</span> the care it beats for.</h1>
                 <p class="hero-desc">Comprehensive cardiac markers, lipid fractionation, ecg correlation, and advanced cardiac risk scoring.</p>
@@ -93,7 +90,7 @@
                             <i class="fa-solid fa-headset"></i>
                             <span>Helpline: <a href="tel:+916280233606" style="color:inherit; text-decoration:none;"><strong>62802-33606</strong></a></span>
                         </div>
-                        <button class="btn-view-package">View Package</button>
+                        <button class="btn-view-package" data-package="Cardiac Wellness Package">View Package</button>
                     </div>
                 </div>
             </div>
@@ -148,11 +145,21 @@
 
                     <div class="form-field-group">
                         <label>Search / Select Test *</label>
-                        <select class="form-input-pill">
+                        <select class="form-input-pill" id="testSelect">
+                            <option value="">-- Select a Test / Package --</option>
                             <option>Cardiac Wellness Package</option>
                             <option>Complete Blood Count (CBC)</option>
                             <option>Full Body Checkup</option>
-                            <option>Lipid Profile</option>
+                            <option>Lipid Profile (Cholesterol)</option>
+                            <option>Thyroid Profile (T3, T4, TSH)</option>
+                            <option>HbA1c (Glycosylated Hemoglobin)</option>
+                            <option>Liver Function Test (LFT)</option>
+                            <option>Kidney Function Test (KFT)</option>
+                            <option>Vitamin D (25-OH)</option>
+                            <option>Vitamin B12</option>
+                            <option>Basic Health Checkup</option>
+                            <option>Comprehensive Health Checkup</option>
+                            <option>Senior Citizen Health Checkup</option>
                         </select>
                     </div>
 
@@ -165,8 +172,9 @@
                 <div class="doctor-info-box">
                     <div class="doctor-box-heading">Our Laboratories</div>
 
-                    <!-- Part 1 -->
-                    <div class="doctor-entry">
+                    <div class="doctor-entries">
+                        <!-- Part 1 (left) -->
+                        <div class="doctor-entry">
                         <div class="doctor-details-content">
                             <div class="doctor-name">Mukesh Kumar <span class="doctor-qual">DMLT</span></div>
                             <div class="doctor-title">M.H. Diagnostic Lab</div>
@@ -255,7 +263,7 @@
                     <p>Evaluates overall health and detects a wide range of disorders, including anemia and infection.</p>
                     <div class="test-card-footer">
                         <div class="test-price">₹399</div>
-                        <button class="btn btn-outline" style="padding: 6px 15px; font-size: 0.9rem;">Book Now</button>
+                        <button class="btn btn-outline" data-test="Complete Blood Count (CBC)" style="padding: 6px 15px; font-size: 0.9rem;">Book Now</button>
                     </div>
                 </div>
                 <!-- Test 2 -->
@@ -267,7 +275,7 @@
                     <p>Measures the amount of cholesterol and triglycerides in your blood to assess heart disease risk.</p>
                     <div class="test-card-footer">
                         <div class="test-price">₹599</div>
-                        <button class="btn btn-outline" style="padding: 6px 15px; font-size: 0.9rem;">Book Now</button>
+                        <button class="btn btn-outline" data-test="Lipid Profile (Cholesterol)" style="padding: 6px 15px; font-size: 0.9rem;">Book Now</button>
                     </div>
                 </div>
                 <!-- Test 3 -->
@@ -279,7 +287,7 @@
                     <p>Checks how well your thyroid gland is working and helps diagnose thyroid disorders.</p>
                     <div class="test-card-footer">
                         <div class="test-price">₹499</div>
-                        <button class="btn btn-outline" style="padding: 6px 15px; font-size: 0.9rem;">Book Now</button>
+                        <button class="btn btn-outline" data-test="Thyroid Profile (T3, T4, TSH)" style="padding: 6px 15px; font-size: 0.9rem;">Book Now</button>
                     </div>
                 </div>
                 <!-- Test 4 -->
@@ -291,7 +299,7 @@
                     <p>Measures your average blood sugar levels over the past 2-3 months.</p>
                     <div class="test-card-footer">
                         <div class="test-price">₹450</div>
-                        <button class="btn btn-outline" style="padding: 6px 15px; font-size: 0.9rem;">Book Now</button>
+                        <button class="btn btn-outline" data-test="HbA1c (Glycosylated Hemoglobin)" style="padding: 6px 15px; font-size: 0.9rem;">Book Now</button>
                     </div>
                 </div>
                 <!-- Test 5 -->
@@ -303,7 +311,7 @@
                     <p>Measures various enzymes, proteins, and substances to assess liver health.</p>
                     <div class="test-card-footer">
                         <div class="test-price">₹650</div>
-                        <button class="btn btn-outline" style="padding: 6px 15px; font-size: 0.9rem;">Book Now</button>
+                        <button class="btn btn-outline" data-test="Liver Function Test (LFT)" style="padding: 6px 15px; font-size: 0.9rem;">Book Now</button>
                     </div>
                 </div>
                 <!-- Test 6 -->
@@ -315,7 +323,7 @@
                     <p>Evaluates how well your kidneys are working to filter waste from your blood.</p>
                     <div class="test-card-footer">
                         <div class="test-price">₹600</div>
-                        <button class="btn btn-outline" style="padding: 6px 15px; font-size: 0.9rem;">Book Now</button>
+                        <button class="btn btn-outline" data-test="Kidney Function Test (KFT)" style="padding: 6px 15px; font-size: 0.9rem;">Book Now</button>
                     </div>
                 </div>
                 <!-- Test 7 -->
@@ -327,7 +335,7 @@
                     <p>Measures the level of vitamin D in your blood to check for deficiency.</p>
                     <div class="test-card-footer">
                         <div class="test-price">₹899</div>
-                        <button class="btn btn-outline" style="padding: 6px 15px; font-size: 0.9rem;">Book Now</button>
+                        <button class="btn btn-outline" data-test="Vitamin D (25-OH)" style="padding: 6px 15px; font-size: 0.9rem;">Book Now</button>
                     </div>
                 </div>
                 <!-- Test 8 -->
@@ -339,7 +347,7 @@
                     <p>Checks for a deficiency of vitamin B12, important for nerve function and blood cells.</p>
                     <div class="test-card-footer">
                         <div class="test-price">₹750</div>
-                        <button class="btn btn-outline" style="padding: 6px 15px; font-size: 0.9rem;">Book Now</button>
+                        <button class="btn btn-outline" data-test="Vitamin B12" style="padding: 6px 15px; font-size: 0.9rem;">Book Now</button>
                     </div>
                 </div>
             </div>
@@ -365,7 +373,7 @@
                         <li><i class="fa-solid fa-check-circle"></i> Urine Routine Examination</li>
                     </ul>
                     <div class="package-price">₹999 <span>₹1499</span></div>
-                    <button class="btn btn-outline" style="width:100%">Book Package</button>
+                    <button class="btn btn-outline" data-package="Basic Health Checkup" style="width:100%">Book Package</button>
                 </div>
 
                 <!-- Package 2 (Highlighted) -->
@@ -383,7 +391,7 @@
                         <li><i class="fa-solid fa-check-circle"></i> Complete Urine Analysis</li>
                     </ul>
                     <div class="package-price" style="color:var(--primary-blue);">₹1,999 <span>₹3500</span></div>
-                    <button class="btn btn-primary" style="width:100%">Book Package</button>
+                    <button class="btn btn-primary" data-package="Comprehensive Health Checkup" style="width:100%">Book Package</button>
                 </div>
 
                 <!-- Package 3 -->
@@ -398,7 +406,7 @@
                         <li><i class="fa-solid fa-check-circle"></i> Prostate Specific Antigen (PSA)</li>
                     </ul>
                     <div class="package-price">₹1,499 <span>₹2500</span></div>
-                    <button class="btn btn-outline" style="width:100%">Book Package</button>
+                    <button class="btn btn-outline" data-package="Senior Citizen Health Checkup" style="width:100%">Book Package</button>
                 </div>
             </div>
         </div>
@@ -491,7 +499,7 @@
                         </li>
                     </ul>
                     
-                    <button class="btn btn-primary" style="margin-top:10px;">Book Home Collection Now</button>
+                    <button class="btn btn-primary" data-book-test style="margin-top:10px;">Book Home Collection Now</button>
                 </div>
                 <div class="split-image">
                     <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=800&q=80" alt="Home Sample Collection by Nurse">
@@ -659,7 +667,7 @@
             <p style="font-size:1.1rem; max-width:600px; margin:0 auto; opacity:0.9;">Don't compromise on your health. Book your diagnostic tests with Aastha Diagnostic Centre today and get accurate results you can trust.</p>
             <div class="cta-buttons">
                 <a href="tel:+916280233606" class="btn btn-light" style="font-size:1.1rem; padding:15px 30px;"><i class="fa-solid fa-phone" style="margin-right:10px;"></i> Call Us: 62802-33606</a>
-                <button class="btn btn-outline" style="border-color:white; color:white; font-size:1.1rem; padding:15px 30px;">Book a Test Online</button>
+                <button class="btn btn-outline" data-book-test style="border-color:white; color:white; font-size:1.1rem; padding:15px 30px;">Book a Test Online</button>
             </div>
         </div>
     </section>
