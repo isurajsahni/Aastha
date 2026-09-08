@@ -31,11 +31,13 @@
     <header class="header">
         <div class="container">
             <div class="logo">
-                <img src="assets/logo.jpg" alt="Aastha Diagnostic Lab Logo" class="logo-mark">
-                <span class="logo-wordmark">
-                    <span class="logo-name">AASTHA</span>
-                    <span class="logo-tagline">DIAGNOSTIC LAB</span>
-                </span>
+                 <a href="index.html" class="logo">
+                    <img src="assets/logo.jpg" alt="Aastha Diagnostic Lab Logo" class="logo-mark">
+                    <span class="logo-wordmark">
+                        <span class="logo-name">AASTHA</span>
+                        <span class="logo-tagline">DIAGNOSTIC LAB</span>
+                    </span>
+                </a>
             </div>
             <nav class="nav-links" id="navLinks">
                 <a href="index.html">Home</a>
@@ -69,7 +71,7 @@
                 <div class="why-card" style="flex-direction: column; text-align: center; align-items: center; padding: 30px 20px;">
                     <div class="why-icon" style="width: 60px; height: 60px; font-size: 1.5rem; margin-bottom: 15px;"><i class="fa-solid fa-location-dot"></i></div>
                     <h3 style="font-size: 1.15rem; margin-bottom: 8px;">Our Laboratories</h3>
-                    <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;"><strong style="color:#0f172a;">M.H. Diagnostic Lab</strong><br>Durga Puri, St. No. 12, Opp. Prince Property Dealer, Main Road, Haibowal, Ludhiana<br><br><strong style="color:#0f172a;">Aastha Diagnostic Lab</strong><br>Churpor Road, Near Vijay Nagar, Haibowal Kalan, Ludhiana (Pb.)</p>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">Durga Puri, St. No. 12, Opp. Prince Property Dealer, Main Road, Haibowal, Ludhiana<br><br><br>Churpor Road, Near Vijay Nagar, Haibowal Kalan, Ludhiana (Pb.)</p>
                 </div>
 
                 <div class="why-card" style="flex-direction: column; text-align: center; align-items: center; padding: 30px 20px;">
@@ -96,26 +98,27 @@
                     <h2 style="font-size: 1.6rem; color: #0f172a; margin-bottom: 8px;">Send Us a Message</h2>
                     <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 24px;">Fill out the form below and our team will get back to you within 30 minutes.</p>
 
-                    <form action="#" onsubmit="alert('Thank you! Your message has been sent successfully.'); return false;" style="display: flex; flex-direction: column; gap: 15px;">
+                    <form action="https://api.web3forms.com/submit" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+                        <input type="hidden" name="access_key" value="464a8097-ce41-4bc4-a3b2-93d60dfd8c7b">
                         <div class="form-row-2col">
                             <div class="form-field-group">
                                 <label>Your Name *</label>
-                                <input type="text" class="form-input-pill" placeholder="Enter full name" required>
+                                <input type="text" name="name" class="form-input-pill" placeholder="Enter full name" required>
                             </div>
                             <div class="form-field-group">
                                 <label>Phone Number *</label>
-                                <input type="tel" class="form-input-pill" placeholder="Enter mobile number" required>
+                                <input type="tel" name="phone" class="form-input-pill" placeholder="Enter mobile number" required>
                             </div>
                         </div>
 
                         <div class="form-row-2col">
                             <div class="form-field-group">
                                 <label>Email Address</label>
-                                <input type="email" class="form-input-pill" placeholder="name@email.com">
+                                <input type="email" name="email" class="form-input-pill" placeholder="name@email.com" required>
                             </div>
                             <div class="form-field-group">
                                 <label>Inquiry Type *</label>
-                                <select class="form-input-pill">
+                                <select name="inquiry_type" class="form-input-pill">
                                     <option>Home Collection Request</option>
                                     <option>Report Status Inquiry</option>
                                     <option>Package Information</option>
@@ -127,7 +130,7 @@
 
                         <div class="form-field-group">
                             <label>Your Message *</label>
-                            <textarea class="form-input-pill" rows="4" style="border-radius: 16px; resize: vertical;" placeholder="How can we help you today?" required></textarea>
+                            <textarea name="message" class="form-input-pill" rows="4" style="border-radius: 16px; resize: vertical;" placeholder="How can we help you today?" required></textarea>
                         </div>
 
                         <button type="submit" class="btn btn-primary" style="padding: 14px; font-size: 1rem; border-radius: 30px; margin-top: 10px;">
@@ -192,59 +195,73 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
+     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div>
                     <div class="logo footer-logo">
+                         <a href="index.html" class="logo">
                         <img src="assets/logo.jpg" alt="Aastha Diagnostic Lab Logo" class="logo-mark">
                         <span class="logo-wordmark">
                             <span class="logo-name">AASTHA</span>
                             <span class="logo-tagline">DIAGNOSTIC LAB</span>
                         </span>
+                        </a>
                     </div>
-                    <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:20px;">Providing accurate, reliable, and affordable diagnostic services to help you make informed health decisions. State-of-the-art laboratory with home collection facility.</p>
+                    <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:20px;">Providing accurate,
+                        reliable, and affordable diagnostic services to help you make informed health decisions.
+                        State-of-the-art laboratory with home collection facility.</p>
                 </div>
-                
                 <div>
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="index.html#services">Our Services</a></li>
-                        <li><a href="index.html#packages">Health Packages</a></li>
-                        <li><a href="index.html#tests">Test Menu</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
-                
                 <div>
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="#">Pathology</a></li>
-                        <li><a href="#">Radiology</a></li>
-                        <li><a href="#">Cardiology</a></li>
-                        <li><a href="#">Home Collection</a></li>
-                        <li><a href="#">Corporate Wellness</a></li>
+                        <li><a href="index.html#">Pathology</a></li>
+                        <li><a href="index.html#">Radiology</a></li>
+                        <li><a href="index.html#">Cardiology</a></li>
+                        <li><a href="index.html#">Home Collection</a></li>
+                        <li><a href="index.html#">Corporate Wellness</a></li>
                     </ul>
                 </div>
-                
                 <div>
                     <h4>Contact Info</h4>
                     <ul style="color:var(--text-muted); font-size:0.95rem;">
-                        <li style="display:flex; gap:10px;"><i class="fa-solid fa-user-doctor" style="color:var(--primary-blue); margin-top:5px;"></i> <span><strong style="color:#1a1a1a;">Mukesh Kumar (DMLT)</strong><br>M.H. Diagnostic Lab<br>Durga Puri, St. No. 12, Opp. Prince Property Dealer, Main Road, Haibowal, Ludhiana<br><a href="tel:+916280233606" style="display:inline;">62802-33606</a>, <a href="tel:+918557821162" style="display:inline;">85578-21162</a></span></li>
-                        <li style="display:flex; gap:10px;"><i class="fa-solid fa-user-doctor" style="color:var(--primary-blue); margin-top:5px;"></i> <span><strong style="color:#1a1a1a;">Kanchan Kaintura (B.Sc. MLT)</strong><br>Aastha Diagnostic Lab<br>Churpor Road, Near Vijay Nagar, Haibowal Kalan, Ludhiana (Pb.)<br><a href="tel:+919877160273" style="display:inline;">98771-60273</a>, <a href="tel:+918054748365" style="display:inline;">80547-48365</a></span></li>
-                        <li style="display:flex; gap:10px;"><i class="fa-solid fa-envelope" style="color:var(--primary-blue); margin-top:5px;"></i> <a href="mailto:info@aasthadiagnosticlab.in" style="display:inline;">info@aasthadiagnosticlab.in</a></li>
+                        <li style="display:flex; gap:10px;"><i class="fa-solid fa-user-doctor"
+                                style="color:var(--primary-blue); margin-top:5px;"></i> <span><strong
+                                    style="color:#1a1a1a;">Mukesh Kumar (DMLT)</strong> <br><a href="tel:+916280233606"
+                                    style="display:inline;">62802-33606</a>, <a href="tel:+918557821162"
+                                    style="display:inline;">85578-21162</a></span></li>
+                        <li style="display:flex; gap:10px;"><i class="fa-solid fa-user-doctor"
+                                style="color:var(--primary-blue); margin-top:5px;"></i> <span><strong
+                                    style="color:#1a1a1a;">Kanchan Kaintura (B.Sc. MLT)</strong><br><a
+                                    href="tel:+919877160273" style="display:inline;">98771-60273</a>, <a
+                                    href="tel:+918054748365" style="display:inline;">80547-48365</a></span></li>
+                        <li style="display:flex; gap:10px;"><i class="fa-solid fa-envelope"
+                                style="color:var(--primary-blue); margin-top:5px;"></i> <a
+                                href="mailto:info@aasthadiagnosticlab.in"
+                                style="display:inline;">info@aasthadiagnosticlab.in</a></li>
                     </ul>
                 </div>
             </div>
-            
             <div class="footer-bottom">
-                <p>&copy; 2026 Aastha Diagnostic Lab. All Rights Reserved.</p>
+                <p>&copy; 2026 Aastha Diagnostic Lab. All Rights Reserved. Designed with care.</p>
+                <a href="https://www.thewebxstudio.com/" class="footer-attribution">Built with ❤️ by Web{X} Studio</a>
+                <style>
+                    .footer-attribution:hover {
+                        color: var(--primary-blue);
+                    }
+                </style>
             </div>
         </div>
     </footer>
+
 
     <script src="js/script.js"></script>
 </body>

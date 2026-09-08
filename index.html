@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,18 +12,21 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
     <!-- Top Bar -->
     <div class="top-bar">
         <div class="container">
             <div class="top-contact">
-                <a href="mailto:info@aasthadiagnosticlab.in"><i class="fa-solid fa-envelope"></i> info@aasthadiagnosticlab.in</a>
+                <a href="mailto:info@aasthadiagnosticlab.in"><i class="fa-solid fa-envelope"></i>
+                    info@aasthadiagnosticlab.in</a>
                 <a href="tel:+916280233606"><i class="fa-solid fa-phone"></i> 62802-33606</a>
                 <a href="tel:+919877160273"><i class="fa-solid fa-phone"></i> 98771-60273</a>
             </div>
             <div class="top-right">
-                <button class="btn btn-light btn-sm" data-book-test style="padding: 5px 15px; font-size: 0.8rem;">Book a Test</button>
+                <button class="btn btn-light btn-sm" data-book-test style="padding: 5px 15px; font-size: 0.8rem;">Book a
+                    Test</button>
             </div>
         </div>
     </div>
@@ -30,13 +34,13 @@
     <!-- Header / Navigation -->
     <header class="header">
         <div class="container">
-            <div class="logo">
+            <a href="index.html" class="logo">
                 <img src="assets/logo.jpg" alt="Aastha Diagnostic Lab Logo" class="logo-mark">
                 <span class="logo-wordmark">
                     <span class="logo-name">AASTHA</span>
                     <span class="logo-tagline">DIAGNOSTIC LAB</span>
                 </span>
-            </div>
+            </a>
             <nav class="nav-links" id="navLinks">
                 <a href="index.html" class="active">Home</a>
                 <a href="about.html">About Us</a>
@@ -62,17 +66,20 @@
                 </div>
 
                 <h1>Give your <span class="highlight-red">HEART</span> the care it beats for.</h1>
-                <p class="hero-desc">Comprehensive cardiac markers, lipid fractionation, ecg correlation, and advanced cardiac risk scoring.</p>
+                <p class="hero-desc">Comprehensive cardiac markers, lipid fractionation, ecg correlation, and advanced
+                    cardiac risk scoring.</p>
 
                 <!-- Featured Image Box -->
                 <div class="hero-image-box">
-                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80" alt="Cardiac Wellness & Heart Care">
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80"
+                        alt="Cardiac Wellness & Heart Care">
                     <div class="hero-image-overlay">
                         <div class="hero-image-overlay-title">
                             <i class="fa-solid fa-heart"></i>
                             <span>Full Heart Assessment</span>
                         </div>
-                        <div class="hero-image-overlay-subtext">Includes hs-CRP, Lipid Profile, Troponin & TMT referral</div>
+                        <div class="hero-image-overlay-subtext">Includes hs-CRP, Lipid Profile, Troponin & TMT referral
+                        </div>
                     </div>
                 </div>
 
@@ -88,7 +95,8 @@
                     <div class="hero-bottom-right">
                         <div class="hero-toll-free">
                             <i class="fa-solid fa-headset"></i>
-                            <span>Helpline: <a href="tel:+916280233606" style="color:inherit; text-decoration:none;"><strong>62802-33606</strong></a></span>
+                            <span>Helpline: <a href="tel:+916280233606"
+                                    style="color:inherit; text-decoration:none;"><strong>62802-33606</strong></a></span>
                         </div>
                         <button class="btn-view-package" data-package="Cardiac Wellness Package">View Package</button>
                     </div>
@@ -105,37 +113,38 @@
                     <span class="form-badge-white">Quick 1-Min Form</span>
                 </div>
 
-                <form class="hero-form" action="#" onsubmit="return false;">
+                <form class="hero-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="464a8097-ce41-4bc4-a3b2-93d60dfd8c7b">
                     <div class="form-row-2col">
                         <div class="form-field-group">
                             <label>Full Name *</label>
-                            <input type="text" class="form-input-pill" placeholder="Your name">
+                            <input type="text" name="name" class="form-input-pill" placeholder="Your name" required>
                         </div>
                         <div class="form-field-group">
                             <label>Email Address</label>
-                            <input type="email" class="form-input-pill" placeholder="name@email.com">
+                            <input type="email" name="email" class="form-input-pill" placeholder="name@email.com" required>
                         </div>
                     </div>
 
                     <div class="form-row-2col">
                         <div class="form-field-group">
                             <label>Mobile Number *</label>
-                            <input type="tel" class="form-input-pill" placeholder="e.g. 98771 60273">
+                            <input type="tel" name="phone" class="form-input-pill" placeholder="e.g. 98771 60273" required>
                         </div>
                         <div class="form-field-group">
                             <label>Preferred Date *</label>
-                            <input type="text" class="form-input-pill" placeholder="mm/dd/yyyy">
+                            <input type="text" name="preferred_date" class="form-input-pill" placeholder="mm/dd/yyyy" required>
                         </div>
                     </div>
 
                     <div class="form-row-2col">
                         <div class="form-field-group">
                             <label>City *</label>
-                            <input type="text" class="form-input-pill" value="Ludhiana">
+                            <input type="text" name="city" class="form-input-pill" value="Ludhiana" required>
                         </div>
                         <div class="form-field-group">
                             <label>Lab Location *</label>
-                            <select class="form-input-pill">
+                            <select name="lab_location" class="form-input-pill" required>
                                 <option>Haibowal Kalan (Main Lab)</option>
                                 <option>Civil Lines Branch</option>
                                 <option>Model Town Branch</option>
@@ -145,7 +154,7 @@
 
                     <div class="form-field-group">
                         <label>Search / Select Test *</label>
-                        <select class="form-input-pill" id="testSelect">
+                        <select name="test" class="form-input-pill" id="testSelect" required>
                             <option value="">-- Select a Test / Package --</option>
                             <option>Cardiac Wellness Package</option>
                             <option>Complete Blood Count (CBC)</option>
@@ -189,7 +198,8 @@
                         <!-- Kanchan Kaintura content div -->
                         <div class="doctor-entry">
                             <div class="doctor-details-content">
-                                <div class="doctor-name">Kanchan Kaintura <span class="doctor-qual">B.Sc. MLT</span></div>
+                                <div class="doctor-name">Kanchan Kaintura <span class="doctor-qual">B.Sc. MLT</span>
+                                </div>
                                 <div class="doctor-contact">
                                     <i class="fa-solid fa-phone"></i>
                                     <a href="tel:+919877160273">98771-60273</a>
@@ -243,7 +253,8 @@
             <div class="section-header-flex">
                 <div>
                     <h2 class="section-title">Popular Diagnostic Tests</h2>
-                    <p class="section-subtitle" style="margin-bottom:0;">Choose from our wide range of diagnostic tests ensuring accurate and timely results.</p>
+                    <p class="section-subtitle" style="margin-bottom:0;">Choose from our wide range of diagnostic tests
+                        ensuring accurate and timely results.</p>
                 </div>
                 <a href="#hero-form" class="btn btn-outline" style="padding:8px 20px;">Custom Test</a>
             </div>
@@ -255,10 +266,12 @@
                         <span class="test-badge">Pathology</span>
                     </div>
                     <h4>Complete Blood Count (CBC)</h4>
-                    <p>Evaluates overall health and detects a wide range of disorders, including anemia and infection.</p>
+                    <p>Evaluates overall health and detects a wide range of disorders, including anemia and infection.
+                    </p>
                     <div class="test-card-footer">
                         <div class="test-price">₹399</div>
-                        <button class="btn btn-outline" data-test="Complete Blood Count (CBC)" style="padding: 6px 15px; font-size: 0.9rem;">Book Now</button>
+                        <button class="btn btn-outline" data-test="Complete Blood Count (CBC)"
+                            style="padding: 6px 15px; font-size: 0.9rem;">Book Now</button>
                     </div>
                 </div>
                 <!-- Test 2 -->
@@ -267,10 +280,12 @@
                         <span class="test-badge">Pathology</span>
                     </div>
                     <h4>Lipid Profile (Cholesterol)</h4>
-                    <p>Measures the amount of cholesterol and triglycerides in your blood to assess heart disease risk.</p>
+                    <p>Measures the amount of cholesterol and triglycerides in your blood to assess heart disease risk.
+                    </p>
                     <div class="test-card-footer">
                         <div class="test-price">₹599</div>
-                        <button class="btn btn-outline" data-test="Lipid Profile (Cholesterol)" style="padding: 6px 15px; font-size: 0.9rem;">Book Now</button>
+                        <button class="btn btn-outline" data-test="Lipid Profile (Cholesterol)"
+                            style="padding: 6px 15px; font-size: 0.9rem;">Book Now</button>
                     </div>
                 </div>
                 <!-- Test 3 -->
@@ -282,7 +297,8 @@
                     <p>Checks how well your thyroid gland is working and helps diagnose thyroid disorders.</p>
                     <div class="test-card-footer">
                         <div class="test-price">₹499</div>
-                        <button class="btn btn-outline" data-test="Thyroid Profile (T3, T4, TSH)" style="padding: 6px 15px; font-size: 0.9rem;">Book Now</button>
+                        <button class="btn btn-outline" data-test="Thyroid Profile (T3, T4, TSH)"
+                            style="padding: 6px 15px; font-size: 0.9rem;">Book Now</button>
                     </div>
                 </div>
                 <!-- Test 4 -->
@@ -294,7 +310,8 @@
                     <p>Measures your average blood sugar levels over the past 2-3 months.</p>
                     <div class="test-card-footer">
                         <div class="test-price">₹450</div>
-                        <button class="btn btn-outline" data-test="HbA1c (Glycosylated Hemoglobin)" style="padding: 6px 15px; font-size: 0.9rem;">Book Now</button>
+                        <button class="btn btn-outline" data-test="HbA1c (Glycosylated Hemoglobin)"
+                            style="padding: 6px 15px; font-size: 0.9rem;">Book Now</button>
                     </div>
                 </div>
                 <!-- Test 5 -->
@@ -306,7 +323,8 @@
                     <p>Measures various enzymes, proteins, and substances to assess liver health.</p>
                     <div class="test-card-footer">
                         <div class="test-price">₹650</div>
-                        <button class="btn btn-outline" data-test="Liver Function Test (LFT)" style="padding: 6px 15px; font-size: 0.9rem;">Book Now</button>
+                        <button class="btn btn-outline" data-test="Liver Function Test (LFT)"
+                            style="padding: 6px 15px; font-size: 0.9rem;">Book Now</button>
                     </div>
                 </div>
                 <!-- Test 6 -->
@@ -318,7 +336,8 @@
                     <p>Evaluates how well your kidneys are working to filter waste from your blood.</p>
                     <div class="test-card-footer">
                         <div class="test-price">₹600</div>
-                        <button class="btn btn-outline" data-test="Kidney Function Test (KFT)" style="padding: 6px 15px; font-size: 0.9rem;">Book Now</button>
+                        <button class="btn btn-outline" data-test="Kidney Function Test (KFT)"
+                            style="padding: 6px 15px; font-size: 0.9rem;">Book Now</button>
                     </div>
                 </div>
                 <!-- Test 7 -->
@@ -330,7 +349,8 @@
                     <p>Measures the level of vitamin D in your blood to check for deficiency.</p>
                     <div class="test-card-footer">
                         <div class="test-price">₹899</div>
-                        <button class="btn btn-outline" data-test="Vitamin D (25-OH)" style="padding: 6px 15px; font-size: 0.9rem;">Book Now</button>
+                        <button class="btn btn-outline" data-test="Vitamin D (25-OH)"
+                            style="padding: 6px 15px; font-size: 0.9rem;">Book Now</button>
                     </div>
                 </div>
                 <!-- Test 8 -->
@@ -342,7 +362,8 @@
                     <p>Checks for a deficiency of vitamin B12, important for nerve function and blood cells.</p>
                     <div class="test-card-footer">
                         <div class="test-price">₹750</div>
-                        <button class="btn btn-outline" data-test="Vitamin B12" style="padding: 6px 15px; font-size: 0.9rem;">Book Now</button>
+                        <button class="btn btn-outline" data-test="Vitamin B12"
+                            style="padding: 6px 15px; font-size: 0.9rem;">Book Now</button>
                     </div>
                 </div>
             </div>
@@ -353,7 +374,8 @@
     <section class="section section-bg">
         <div class="container text-center">
             <h2 class="section-title">Complete Health Checkups for Every Stage</h2>
-            <p class="section-subtitle">Comprehensive preventive health checkup packages tailored to your lifestyle and age.</p>
+            <p class="section-subtitle">Comprehensive preventive health checkup packages tailored to your lifestyle and
+                age.</p>
 
             <div class="packages-grid">
                 <!-- Package 1 -->
@@ -368,7 +390,8 @@
                         <li><i class="fa-solid fa-check-circle"></i> Urine Routine Examination</li>
                     </ul>
                     <div class="package-price">₹999 <span>₹1499</span></div>
-                    <button class="btn btn-outline" data-package="Basic Health Checkup" style="width:100%">Book Package</button>
+                    <button class="btn btn-outline" data-package="Basic Health Checkup" style="width:100%">Book
+                        Package</button>
                 </div>
 
                 <!-- Package 2 (Highlighted) -->
@@ -386,7 +409,8 @@
                         <li><i class="fa-solid fa-check-circle"></i> Complete Urine Analysis</li>
                     </ul>
                     <div class="package-price" style="color:var(--primary-blue);">₹1,999 <span>₹3500</span></div>
-                    <button class="btn btn-primary" data-package="Comprehensive Health Checkup" style="width:100%">Book Package</button>
+                    <button class="btn btn-primary" data-package="Comprehensive Health Checkup" style="width:100%">Book
+                        Package</button>
                 </div>
 
                 <!-- Package 3 -->
@@ -401,7 +425,8 @@
                         <li><i class="fa-solid fa-check-circle"></i> Prostate Specific Antigen (PSA)</li>
                     </ul>
                     <div class="package-price">₹1,499 <span>₹2500</span></div>
-                    <button class="btn btn-outline" data-package="Senior Citizen Health Checkup" style="width:100%">Book Package</button>
+                    <button class="btn btn-outline" data-package="Senior Citizen Health Checkup" style="width:100%">Book
+                        Package</button>
                 </div>
             </div>
         </div>
@@ -412,7 +437,8 @@
         <div class="container">
             <div class="text-center">
                 <h2 class="section-title">Why Choose AASTHA Diagnostic Lab?</h2>
-                <p class="section-subtitle">Dedicated to delivering high-quality and reliable diagnostic services with a patient-first approach.</p>
+                <p class="section-subtitle">Dedicated to delivering high-quality and reliable diagnostic services with a
+                    patient-first approach.</p>
             </div>
 
             <div class="why-grid">
@@ -420,42 +446,48 @@
                     <div class="why-icon"><i class="fa-solid fa-microscope"></i></div>
                     <div>
                         <h4>Modern Technology</h4>
-                        <p style="font-size:0.9rem; color:var(--text-muted)">We use state-of-the-art fully automated equipment to ensure the highest precision in our tests.</p>
+                        <p style="font-size:0.9rem; color:var(--text-muted)">We use state-of-the-art fully automated
+                            equipment to ensure the highest precision in our tests.</p>
                     </div>
                 </div>
                 <div class="why-card">
                     <div class="why-icon"><i class="fa-solid fa-user-md"></i></div>
                     <div>
                         <h4>Expert Pathologists</h4>
-                        <p style="font-size:0.9rem; color:var(--text-muted)">Our team of experienced pathologists guarantees accurate diagnosis and professional care.</p>
+                        <p style="font-size:0.9rem; color:var(--text-muted)">Our team of experienced pathologists
+                            guarantees accurate diagnosis and professional care.</p>
                     </div>
                 </div>
                 <div class="why-card">
                     <div class="why-icon"><i class="fa-solid fa-house-chimney-medical"></i></div>
                     <div>
                         <h4>Home Sample Collection</h4>
-                        <p style="font-size:0.9rem; color:var(--text-muted)">Enjoy the convenience of providing samples from your home with our free collection service.</p>
+                        <p style="font-size:0.9rem; color:var(--text-muted)">Enjoy the convenience of providing samples
+                            from your home with our free collection service.</p>
                     </div>
                 </div>
                 <div class="why-card">
                     <div class="why-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
                     <div>
                         <h4>Timely Accurate Reports</h4>
-                        <p style="font-size:0.9rem; color:var(--text-muted)">We ensure quick turnaround times without compromising the quality and accuracy of results.</p>
+                        <p style="font-size:0.9rem; color:var(--text-muted)">We ensure quick turnaround times without
+                            compromising the quality and accuracy of results.</p>
                     </div>
                 </div>
                 <div class="why-card">
                     <div class="why-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
                     <div>
                         <h4>Affordable Pricing</h4>
-                        <p style="font-size:0.9rem; color:var(--text-muted)">Premium diagnostic services at cost-effective prices making healthcare accessible to all.</p>
+                        <p style="font-size:0.9rem; color:var(--text-muted)">Premium diagnostic services at
+                            cost-effective prices making healthcare accessible to all.</p>
                     </div>
                 </div>
                 <div class="why-card">
                     <div class="why-icon"><i class="fa-solid fa-shield-halved"></i></div>
                     <div>
                         <h4>Strict Quality Control</h4>
-                        <p style="font-size:0.9rem; color:var(--text-muted)">We adhere to rigorous quality assurance programs to deliver consistent and reliable reports.</p>
+                        <p style="font-size:0.9rem; color:var(--text-muted)">We adhere to rigorous quality assurance
+                            programs to deliver consistent and reliable reports.</p>
                     </div>
                 </div>
             </div>
@@ -468,36 +500,43 @@
             <div class="split-section">
                 <div class="split-content">
                     <h2 class="section-title">Excellence in Health Diagnostics At Your Home</h2>
-                    <p style="color:var(--text-muted);">Skip the travel and waiting room. Aastha Diagnostic brings world-class laboratory services directly to your doorstep with strict safety and hygiene protocols.</p>
-                    
+                    <p style="color:var(--text-muted);">Skip the travel and waiting room. Aastha Diagnostic brings
+                        world-class laboratory services directly to your doorstep with strict safety and hygiene
+                        protocols.</p>
+
                     <ul class="split-list">
                         <li>
                             <i class="fa-solid fa-droplet"></i>
                             <div>
                                 <h4 style="font-size:1rem;">Blood Test at Home</h4>
-                                <p style="font-size:0.85rem; color:var(--text-muted); margin:0;">Painless blood sample collection by trained phlebotomists.</p>
+                                <p style="font-size:0.85rem; color:var(--text-muted); margin:0;">Painless blood sample
+                                    collection by trained phlebotomists.</p>
                             </div>
                         </li>
                         <li>
                             <i class="fa-solid fa-flask"></i>
                             <div>
                                 <h4 style="font-size:1rem;">Urine/Stool Sample Collection</h4>
-                                <p style="font-size:0.85rem; color:var(--text-muted); margin:0;">Hassle-free collection of routine samples.</p>
+                                <p style="font-size:0.85rem; color:var(--text-muted); margin:0;">Hassle-free collection
+                                    of routine samples.</p>
                             </div>
                         </li>
                         <li>
                             <i class="fa-solid fa-heart-pulse"></i>
                             <div>
                                 <h4 style="font-size:1rem;">ECG at Home</h4>
-                                <p style="font-size:0.85rem; color:var(--text-muted); margin:0;">Portable ECG services provided by expert technicians.</p>
+                                <p style="font-size:0.85rem; color:var(--text-muted); margin:0;">Portable ECG services
+                                    provided by expert technicians.</p>
                             </div>
                         </li>
                     </ul>
-                    
-                    <button class="btn btn-primary" data-book-test style="margin-top:10px;">Book Home Collection Now</button>
+
+                    <button class="btn btn-primary" data-book-test style="margin-top:10px;">Book Home Collection
+                        Now</button>
                 </div>
                 <div class="split-image">
-                    <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=800&q=80" alt="Home Sample Collection by Nurse">
+                    <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=800&q=80"
+                        alt="Home Sample Collection by Nurse">
                 </div>
             </div>
         </div>
@@ -508,7 +547,8 @@
         <div class="container">
             <div class="text-center">
                 <h2 class="section-title">Our Diagnostic Services</h2>
-                <p class="section-subtitle">We offer a comprehensive range of clinical laboratory and imaging services.</p>
+                <p class="section-subtitle">We offer a comprehensive range of clinical laboratory and imaging services.
+                </p>
             </div>
 
             <div class="services-small-grid">
@@ -569,19 +609,31 @@
         <div class="container">
             <div class="split-section">
                 <div class="split-image">
-                    <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=800&q=80" alt="Modern Automated Pathology Laboratory">
+                    <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=800&q=80"
+                        alt="Modern Automated Pathology Laboratory">
                 </div>
                 <div class="split-content">
                     <h2 class="section-title">Committed to Better Health Through Reliable Diagnostics</h2>
-                    <p style="color:var(--text-muted); margin-bottom:20px;">At Aastha Diagnostic Lab, we understand that accurate diagnosis is the first step towards effective treatment. Our facility is equipped with fully automated analyzers and manned by a team of highly qualified pathologists and technicians.</p>
-                    <p style="color:var(--text-muted); margin-bottom:25px;">We are dedicated to providing our community with accessible, affordable, and accurate healthcare solutions, ensuring peace of mind for you and your loved ones.</p>
-                    
+                    <p style="color:var(--text-muted); margin-bottom:20px;">At Aastha Diagnostic Lab, we understand that
+                        accurate diagnosis is the first step towards effective treatment. Our facility is equipped with
+                        fully automated analyzers and manned by a team of highly qualified pathologists and technicians.
+                    </p>
+                    <p style="color:var(--text-muted); margin-bottom:25px;">We are dedicated to providing our community
+                        with accessible, affordable, and accurate healthcare solutions, ensuring peace of mind for you
+                        and your loved ones.</p>
+
                     <ul style="margin-bottom:30px;">
-                        <li style="margin-bottom:10px;"><i class="fa-solid fa-check" style="color:var(--primary-blue); margin-right:10px;"></i> Advanced automated testing instruments</li>
-                        <li style="margin-bottom:10px;"><i class="fa-solid fa-check" style="color:var(--primary-blue); margin-right:10px;"></i> Stringent internal & external quality control</li>
-                        <li style="margin-bottom:10px;"><i class="fa-solid fa-check" style="color:var(--primary-blue); margin-right:10px;"></i> Barcoded samples for zero error probability</li>
+                        <li style="margin-bottom:10px;"><i class="fa-solid fa-check"
+                                style="color:var(--primary-blue); margin-right:10px;"></i> Advanced automated testing
+                            instruments</li>
+                        <li style="margin-bottom:10px;"><i class="fa-solid fa-check"
+                                style="color:var(--primary-blue); margin-right:10px;"></i> Stringent internal & external
+                            quality control</li>
+                        <li style="margin-bottom:10px;"><i class="fa-solid fa-check"
+                                style="color:var(--primary-blue); margin-right:10px;"></i> Barcoded samples for zero
+                            error probability</li>
                     </ul>
-                    
+
                     <button class="btn btn-primary">Learn More About Us</button>
                 </div>
             </div>
@@ -599,23 +651,32 @@
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="stars">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
                     </div>
-                    <p class="testimonial-text">"Excellent service! The home collection was prompt, and the phlebotomist was highly professional. Received my reports online exactly when promised."</p>
+                    <p class="testimonial-text">"Excellent service! The home collection was prompt, and the phlebotomist
+                        was highly professional. Received my reports online exactly when promised."</p>
                     <p class="testimonial-author">Rahul Sharma</p>
                 </div>
                 <div class="testimonial-card">
                     <div class="stars">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star-half-stroke"></i>
                     </div>
-                    <p class="testimonial-text">"Aastha Diagnostic Lab provides very accurate results. The staff is polite, and the lab maintains high standards of hygiene. Highly recommend for any tests."</p>
+                    <p class="testimonial-text">"Aastha Diagnostic Lab provides very accurate results. The staff is
+                        polite, and the lab maintains high standards of hygiene. Highly recommend for any tests."</p>
                     <p class="testimonial-author">Priya Patel</p>
                 </div>
                 <div class="testimonial-card">
                     <div class="stars">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
                     </div>
-                    <p class="testimonial-text">"I regularly book their senior citizen health package for my parents. They make the whole process so convenient. Affordable pricing and reliable service."</p>
+                    <p class="testimonial-text">"I regularly book their senior citizen health package for my parents.
+                        They make the whole process so convenient. Affordable pricing and reliable service."</p>
                     <p class="testimonial-author">Amit Verma</p>
                 </div>
             </div>
@@ -632,24 +693,35 @@
 
             <div class="faq-list">
                 <div class="faq-item">
-                    <div class="faq-question">How do I book a home sample collection? <i class="fa-solid fa-chevron-down"></i></div>
-                    <div class="faq-answer">You can book a home sample collection by calling our helpline, using the 'Book Home Collection' button on our website, or sending us a message on WhatsApp.</div>
+                    <div class="faq-question">How do I book a home sample collection? <i
+                            class="fa-solid fa-chevron-down"></i></div>
+                    <div class="faq-answer">You can book a home sample collection by calling our helpline, using the
+                        'Book Home Collection' button on our website, or sending us a message on WhatsApp.</div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">How long does it take to get test reports? <i class="fa-solid fa-chevron-down"></i></div>
-                    <div class="faq-answer">Most routine blood and urine test reports are available within 12-24 hours. Specialized tests may take 2-3 days. We will notify you via SMS when reports are ready.</div>
+                    <div class="faq-question">How long does it take to get test reports? <i
+                            class="fa-solid fa-chevron-down"></i></div>
+                    <div class="faq-answer">Most routine blood and urine test reports are available within 12-24 hours.
+                        Specialized tests may take 2-3 days. We will notify you via SMS when reports are ready.</div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">Can I access my reports online? <i class="fa-solid fa-chevron-down"></i></div>
-                    <div class="faq-answer">Yes, you can easily download your reports from our website by entering your patient ID/Mobile Number and password provided at the time of booking.</div>
+                    <div class="faq-question">Can I access my reports online? <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">Yes, you can easily download your reports from our website by entering your
+                        patient ID/Mobile Number and password provided at the time of booking.</div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">Do I need to fast before my blood test? <i class="fa-solid fa-chevron-down"></i></div>
-                    <div class="faq-answer">Some tests like Fasting Blood Sugar and Lipid Profile require 10-12 hours of fasting. Our team will guide you on any specific preparation needed when you book the test.</div>
+                    <div class="faq-question">Do I need to fast before my blood test? <i
+                            class="fa-solid fa-chevron-down"></i></div>
+                    <div class="faq-answer">Some tests like Fasting Blood Sugar and Lipid Profile require 10-12 hours of
+                        fasting. Our team will guide you on any specific preparation needed when you book the test.
+                    </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">Are the test results accurate? <i class="fa-solid fa-chevron-down"></i></div>
-                    <div class="faq-answer">Absolutely. We use highly advanced automated equipment and run regular quality control checks to ensure 100% accuracy in our diagnostic reports.</div>
+                    <div class="faq-question">Are the test results accurate? <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">Absolutely. We use highly advanced automated equipment and run regular
+                        quality control checks to ensure 100% accuracy in our diagnostic reports.</div>
                 </div>
             </div>
         </div>
@@ -659,68 +731,87 @@
     <section class="cta-section">
         <div class="container">
             <h2>Take the First Step Towards Better Health</h2>
-            <p style="font-size:1.1rem; max-width:600px; margin:0 auto; opacity:0.9;">Don't compromise on your health. Book your diagnostic tests with Aastha Diagnostic Lab today and get accurate results you can trust.</p>
+            <p style="font-size:1.1rem; max-width:600px; margin:0 auto; opacity:0.9;">Don't compromise on your health.
+                Book your diagnostic tests with Aastha Diagnostic Lab today and get accurate results you can trust.</p>
             <div class="cta-buttons">
-                <a href="tel:+916280233606" class="btn btn-light" style="font-size:1.1rem; padding:15px 30px;"><i class="fa-solid fa-phone" style="margin-right:10px;"></i> Call Us: 62802-33606</a>
-                <button class="btn btn-outline" data-book-test style="border-color:white; color:white; font-size:1.1rem; padding:15px 30px;">Book a Test Online</button>
+                <a href="tel:+916280233606" class="btn btn-light" style="font-size:1.1rem; padding:15px 30px;"><i
+                        class="fa-solid fa-phone" style="margin-right:10px;"></i> Call Us: 62802-33606</a>
+                <button class="btn btn-outline" data-book-test
+                    style="border-color:white; color:white; font-size:1.1rem; padding:15px 30px;">Book a Test
+                    Online</button>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div>
                     <div class="logo footer-logo">
+                         <a href="index.html" class="logo">
                         <img src="assets/logo.jpg" alt="Aastha Diagnostic Lab Logo" class="logo-mark">
                         <span class="logo-wordmark">
                             <span class="logo-name">AASTHA</span>
                             <span class="logo-tagline">DIAGNOSTIC LAB</span>
                         </span>
+                        </a>
                     </div>
-                    <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:20px;">Providing accurate, reliable, and affordable diagnostic services to help you make informed health decisions. State-of-the-art laboratory with home collection facility.</p>
+                    <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:20px;">Providing accurate,
+                        reliable, and affordable diagnostic services to help you make informed health decisions.
+                        State-of-the-art laboratory with home collection facility.</p>
                 </div>
-                
                 <div>
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="#services">Our Services</a></li>
-                        <li><a href="#packages">Health Packages</a></li>
-                        <li><a href="#tests">Test Menu</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
-                
                 <div>
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="#">Pathology</a></li>
-                        <li><a href="#">Radiology</a></li>
-                        <li><a href="#">Cardiology</a></li>
-                        <li><a href="#">Home Collection</a></li>
-                        <li><a href="#">Corporate Wellness</a></li>
+                        <li><a href="index.html">Pathology</a></li>
+                        <li><a href="index.html">Radiology</a></li>
+                        <li><a href="index.html">Cardiology</a></li>
+                        <li><a href="index.html">Home Collection</a></li>
+                        <li><a href="index.html">Corporate Wellness</a></li>
                     </ul>
                 </div>
-                
                 <div>
                     <h4>Contact Info</h4>
                     <ul style="color:var(--text-muted); font-size:0.95rem;">
-                        <li style="display:flex; gap:10px;"><i class="fa-solid fa-user-doctor" style="color:var(--primary-blue); margin-top:5px;"></i> <span><strong style="color:#1a1a1a;">Mukesh Kumar (DMLT)</strong><br>M.H. Diagnostic Lab<br>Durga Puri, St. No. 12, Opp. Prince Property Dealer, Main Road, Haibowal, Ludhiana<br><a href="tel:+916280233606" style="display:inline;">62802-33606</a>, <a href="tel:+918557821162" style="display:inline;">85578-21162</a></span></li>
-                        <li style="display:flex; gap:10px;"><i class="fa-solid fa-user-doctor" style="color:var(--primary-blue); margin-top:5px;"></i> <span><strong style="color:#1a1a1a;">Kanchan Kaintura (B.Sc. MLT)</strong><br>Aastha Diagnostic Lab<br>Churpor Road, Near Vijay Nagar, Haibowal Kalan, Ludhiana (Pb.)<br><a href="tel:+919877160273" style="display:inline;">98771-60273</a>, <a href="tel:+918054748365" style="display:inline;">80547-48365</a></span></li>
-                        <li style="display:flex; gap:10px;"><i class="fa-solid fa-envelope" style="color:var(--primary-blue); margin-top:5px;"></i> <a href="mailto:info@aasthadiagnosticlab.in" style="display:inline;">info@aasthadiagnosticlab.in</a></li>
+                        <li style="display:flex; gap:10px;"><i class="fa-solid fa-user-doctor"
+                                style="color:var(--primary-blue); margin-top:5px;"></i> <span><strong
+                                    style="color:#1a1a1a;">Mukesh Kumar (DMLT)</strong> <br><a href="tel:+916280233606"
+                                    style="display:inline;">62802-33606</a>, <a href="tel:+918557821162"
+                                    style="display:inline;">85578-21162</a></span></li>
+                        <li style="display:flex; gap:10px;"><i class="fa-solid fa-user-doctor"
+                                style="color:var(--primary-blue); margin-top:5px;"></i> <span><strong
+                                    style="color:#1a1a1a;">Kanchan Kaintura (B.Sc. MLT)</strong><br><a
+                                    href="tel:+919877160273" style="display:inline;">98771-60273</a>, <a
+                                    href="tel:+918054748365" style="display:inline;">80547-48365</a></span></li>
+                        <li style="display:flex; gap:10px;"><i class="fa-solid fa-envelope"
+                                style="color:var(--primary-blue); margin-top:5px;"></i> <a
+                                href="mailto:info@aasthadiagnosticlab.in"
+                                style="display:inline;">info@aasthadiagnosticlab.in</a></li>
                     </ul>
                 </div>
             </div>
-            
             <div class="footer-bottom">
                 <p>&copy; 2026 Aastha Diagnostic Lab. All Rights Reserved. Designed with care.</p>
+                <a href="https://www.thewebxstudio.com/" class="footer-attribution">Built with ❤️ by Web{X} Studio</a>
+                <style>
+                    .footer-attribution:hover {
+                        color: var(--primary-blue);
+                    }
+                </style>
             </div>
         </div>
     </footer>
 
+
     <script src="js/script.js"></script>
 </body>
+
 </html>

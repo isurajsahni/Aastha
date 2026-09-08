@@ -1362,3 +1362,32 @@ h2.section-title {
     margin-bottom: 24px;
   }
 }
+
+/* Responsive adjustments for About Us page */
+@media (max-width: 768px) {
+  .split-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .split-image,
+  .split-content {
+    width: 100%;
+  }
+  .testimonials-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .why-grid {
+    grid-template-columns: 1fr !important;
+    gap: 15px !important;
+  }
+  .cta-buttons {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+  .cta-buttons a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
